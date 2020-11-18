@@ -15,9 +15,8 @@ def swap_elements(array)
   array.insert(1, switch)
 end
 
-def swap_elements_from_to(array, from, to)
-  array[from], array[to] = array[to], array[from]
-  array
+def sort_array_char_count(array)
+  array.sort {|a,b| a.length <=> b.length}
 end
 
 def reverse_array(array)
@@ -42,3 +41,7 @@ def add_s(array)
     index != 1 ? item << "s" : item
   end
 end 
+
+
+
+
